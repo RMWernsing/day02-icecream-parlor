@@ -29,7 +29,7 @@
             <div class="d-flex text-primary justify-content-between p-2">
               <div class="col-4">
                 <p>
-                  name
+                  Name
                 </p>
               </div>
               <div class="col-2">
@@ -49,10 +49,24 @@
               </div>
             </div>
             <div class="d-flex justify-content-between p-2">
-              <div class="col-4">name</div>
-              <div class="col-2">qty</div>
-              <div class="col-2">each</div>
-              <div class="col-2">total</div>
+              <div class="col-4">
+                <div id="nameList">
+                </div>
+              </div>
+              <div class="col-2">
+                <div id="quantityList">
+                </div>
+              </div>
+              <div class="col-2">
+                <p>
+                  Each
+                </p>
+              </div>
+              <div class="col-2">
+                <p>
+                  Total
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -63,35 +77,32 @@
               <h2>Toppings</h2>
             </div>
             <div class="col-md-4">
-              <div class="card m-1" style="width: 18rem;">
+              <div onclick="addItemToCart(0)" class="card m-1" style="width: 18rem;">
                 <img
                   src="https://images.unsplash.com/photo-1516746924755-babd21844370?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="card-img-top ice-cream-card" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Sprinkles $2</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card m-1" style="width: 18rem;">
+              <div onclick="addItemToCart(1)" class="card m-1" style="width: 18rem;">
                 <img
                   src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwY2hpcHN8ZW58MHx8MHx8fDI%3D"
                   class="card-img-top ice-cream-card" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Chocolate Chips $3</p>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card m-1" style="width: 18rem;">
+              <div onclick="addItemToCart(2)" class="card m-1" style="width: 18rem;">
                 <img
                   src="https://images.unsplash.com/photo-1600359756098-8bc52195bbf4?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="card-img-top ice-cream-card" alt="...">
                 <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                  <p class="card-text">Gummy Worms $2</p>
                 </div>
               </div>
             </div>
