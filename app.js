@@ -53,10 +53,6 @@ const menuItems = [
 function addItemToCart(indexNumber) {
   const menuItem = menuItems[indexNumber]
 
-  if (menuItem == undefined) {
-    console.warn(`${indexNumber} is not a valid index`)
-  }
-
   menuItem.quantity++
 
   drawCartName()
@@ -89,11 +85,19 @@ function checkout() {
 
   window.alert(`Your order has been confirmed. your total was $${total}!`)
 
+  clearCart()
   drawCartName()
   drawCartQuantity()
   drawCartPrice()
   drawCartTotal()
   drawFullCartTotal()
+}
+
+function clearCart() {
+  for (let i = 0; i < menuItems.length; i++) {
+    const menuItem = menuItems[i]
+    menuItem.quantity = 0
+  }
 }
 
 // ANCHOR drawing (DOM manipulation)
