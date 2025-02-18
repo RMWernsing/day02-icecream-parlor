@@ -58,15 +58,16 @@
                 </div>
               </div>
               <div class="col-2">
-                <p>
-                  Each
-                </p>
+                <div id="priceList">
+                </div>
               </div>
               <div class="col-2">
-                <p>
-                  Total
-                </p>
+                <div id="totalList">
+                </div>
               </div>
+            </div>
+            <div class="text-end pe-5">
+              <div class="col-12">Cart Total: <span id="fullTotal"></span></div>
             </div>
           </div>
         </div>
@@ -80,7 +81,7 @@
               <div onclick="addItemToCart(0)" class="card m-1" style="width: 18rem;">
                 <img
                   src="https://images.unsplash.com/photo-1516746924755-babd21844370?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="card-img-top ice-cream-card" alt="...">
+                  class="card-img-top ice-cream-card" alt="picture of sprinkles">
                 <div class="card-body">
                   <p class="card-text">Sprinkles $2</p>
                 </div>
@@ -90,7 +91,7 @@
               <div onclick="addItemToCart(1)" class="card m-1" style="width: 18rem;">
                 <img
                   src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlJTIwY2hpcHN8ZW58MHx8MHx8fDI%3D"
-                  class="card-img-top ice-cream-card" alt="...">
+                  class="card-img-top ice-cream-card" alt="picture of chocolate chips">
                 <div class="card-body">
                   <p class="card-text">Chocolate Chips $3</p>
                 </div>
@@ -100,9 +101,73 @@
               <div onclick="addItemToCart(2)" class="card m-1" style="width: 18rem;">
                 <img
                   src="https://images.unsplash.com/photo-1600359756098-8bc52195bbf4?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="card-img-top ice-cream-card" alt="...">
+                  class="card-img-top ice-cream-card" alt="picture of gummy worms">
                 <div class="card-body">
                   <p class="card-text">Gummy Worms $2</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <h2>Vessels</h2>
+            </div>
+            <div class="col-md-4">
+              <div onclick="addItemToCart(3)" class="card m-1" style="width: 18rem;">
+                <img
+                  src="https://images.unsplash.com/photo-1513329634746-37399553de66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="card-img-top ice-cream-card" alt="picture of waffle cones">
+                <div class="card-body">
+                  <p class="card-text">Waffle Cone $3</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div onclick="addItemToCart(4)" class="card m-1" style="width: 18rem;">
+                <img
+                  src="https://www.seriouseats.com/thmb/0D6GOsOviAxaJzyEvxyE5qVrcf0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__05__20190501-waffle-cones-vicky-wasik-15-1500x1125-1cb809bf30bb4ca3b6c9d1a0bcdc86af.jpg"
+                  class="card-img-top ice-cream-card" alt="picture of waffle bowl">
+                <div class="card-body">
+                  <p class="card-text">Waffle Bowl $4</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div onclick="addItemToCart(5)" class="card m-1" style="width: 18rem;">
+                <img src="https://joycone.com/wp-content/uploads/2019/05/jc2.jpeg" class="card-img-top ice-cream-card"
+                  alt="picture of dipped cone">
+                <div class="card-body">
+                  <p class="card-text">Dipped Cone $5</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <h2>Ice Cream</h2>
+            </div>
+            <div class="col-md-4">
+              <div onclick="addItemToCart(6)" class="card m-1" style="width: 18rem;">
+                <img
+                  src="https://www.sweetandsavorybyshinee.com/wp-content/uploads/2021/07/Homemade-Vanilla-Ice-Cream-4-500x500.jpg"
+                  class="card-img-top ice-cream-card" alt="picture of vanilla ice cream">
+                <div class="card-body">
+                  <p class="card-text">Vanilla $3</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div onclick="addItemToCart(7)" class="card m-1" style="width: 18rem;">
+                <img
+                  src="https://adventuresofmel.com/wp-content/uploads/2023/03/Old-Fashioned-Homemade-Chocolate-Ice-Cream-500x500.jpg"
+                  class="card-img-top ice-cream-card" alt="picture of chocolate ice cream">
+                <div class="card-body">
+                  <p class="card-text">Chocolate $4</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div onclick="addItemToCart(8)" class="card m-1" style="width: 18rem;">
+                <img src="https://aplantifulpath.com/wp-content/uploads/2019/08/Strawberry-Ice-Cream-1.jpg"
+                  class="card-img-top ice-cream-card" alt="picture of strawberry ice cream">
+                <div class="card-body">
+                  <p class="card-text">Strawberry $4</p>
                 </div>
               </div>
             </div>
