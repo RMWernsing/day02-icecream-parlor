@@ -79,11 +79,14 @@ function calculateCartTotal() {
 function checkout() {
   const total = calculateCartTotal()
 
+
   if (total == 0) {
     window.alert("Please add something to your cart!!! 🤬")
   }
+  else {
+    window.alert(`Your order has been confirmed. your total was $${total}!`)
+  }
 
-  window.alert(`Your order has been confirmed. your total was $${total}!`)
 
   clearCart()
   drawCartName()
