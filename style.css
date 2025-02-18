@@ -1,0 +1,5 @@
+.ice-cream-card {
+  height: 25vh;
+  object-fit: cover;
+  object-position: bottom;
+}
